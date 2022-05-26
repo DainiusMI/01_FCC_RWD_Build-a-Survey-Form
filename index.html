@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Survey Form</title>
+    <meta viewport="">
+</head>
+<body>
+    <main>
+        <h1 id="title">Register for your Yoga class</h1>
+        <p id="description">Better yourself, better your life, better your future, sign up for our yoga classes.</p>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label">Username: <input id="name" type="text" required placeholder="Enter your username"/> </label>
+                <label id="email-label">Email address: <input id="email" type="email" required placeholder="Enter your email"/> </label>
+                <label><input type="checkbox" value="news_subscribed"> Subscribe for our newsletter</label>
+                <label id="number-label">Age: <input id="number" type="number" min="18" max="99" placeholder="Age" value="18"/> </label>
+                <label>Gender: 
+                    <select name="gender" id="dropdown">
+                        <option value="">select</option>
+                        <option value="female">female</option>
+                        <option value="male">male</option>
+                    </select>
+                </label>
+                <label id="terms"><input type="checkbox" value="terms_agreed" required> I have read the <a href="">terms</a></label>
+            </fieldset>
+            <fieldset>
+                <label>Select your knowladge level:</label>
+                <label><input name="skill_level" type="radio" value="beginner"> Beginner</label>
+                <label><input name="skill_level" type="radio" value="advanced"> Advanced</label>
+                <label><input name="skill_level" type="radio" value="expert"> Expert</label>
+            </fieldset>
+            <fieldset>
+                <label>Tell us a little bit about yourself: </label>
+                <textarea name="bio" id="bio" cols="10" rows="3"></textarea>
+            </fieldset>
+            <input type="submit" name="Submit" class="button" id="submit">
+        </form>
+    </main>
+</body>
+</html>
